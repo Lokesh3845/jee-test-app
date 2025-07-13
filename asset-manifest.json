@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/jee-test-app/static/css/main.e25307d5.css",
-    "main.js": "/jee-test-app/static/js/main.7ae89291.js",
+    "main.js": "/jee-test-app/static/js/main.c8acbe0c.js",
     "static/js/239.ecdd2af2.chunk.js": "/jee-test-app/static/js/239.ecdd2af2.chunk.js",
     "static/js/977.52183d74.chunk.js": "/jee-test-app/static/js/977.52183d74.chunk.js",
     "static/js/455.7dfdbf8b.chunk.js": "/jee-test-app/static/js/455.7dfdbf8b.chunk.js",
     "static/js/453.9abe2eca.chunk.js": "/jee-test-app/static/js/453.9abe2eca.chunk.js",
     "index.html": "/jee-test-app/index.html",
     "main.e25307d5.css.map": "/jee-test-app/static/css/main.e25307d5.css.map",
-    "main.7ae89291.js.map": "/jee-test-app/static/js/main.7ae89291.js.map",
+    "main.c8acbe0c.js.map": "/jee-test-app/static/js/main.c8acbe0c.js.map",
     "239.ecdd2af2.chunk.js.map": "/jee-test-app/static/js/239.ecdd2af2.chunk.js.map",
     "977.52183d74.chunk.js.map": "/jee-test-app/static/js/977.52183d74.chunk.js.map",
     "455.7dfdbf8b.chunk.js.map": "/jee-test-app/static/js/455.7dfdbf8b.chunk.js.map",
@@ -16,6 +16,6 @@
   },
   "entrypoints": [
     "static/css/main.e25307d5.css",
-    "static/js/main.7ae89291.js"
+    "static/js/main.c8acbe0c.js"
   ]
 }
