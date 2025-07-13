@@ -1,0 +1,347 @@
+/* Base Layout */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f0f2f5;
+}
+
+.app-container {
+  display: flex;
+  height: 100vh;
+}
+
+/* Sidebar */
+.sidebar {
+  width: 260px;
+  background-color: #003566;
+  color: white;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.sidebar h3 {
+  font-size: 20px;
+  margin-bottom: 15px;
+}
+
+.question-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 8px;
+  margin-bottom: 20px;
+}
+
+.btn {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: none;
+  font-weight: bold;
+  cursor: pointer;
+  color: white;
+  transition: transform 0.15s;
+}
+
+.btn:hover {
+  transform: scale(1.1);
+}
+
+.answered {
+  background-color: #28a745;
+}
+
+.review {
+  background-color: #ffc107;
+  color: #212529;
+}
+
+.unanswered {
+  background-color: #6c757d;
+}
+
+.submit-btn {
+  margin-top: auto;
+  background-color: #ff6b6b;
+  padding: 10px;
+  font-weight: bold;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.submit-btn:hover {
+  background-color: #fa5252;
+}
+
+/* Question Area */
+.question-box {
+  flex: 1;
+  background: white;
+  padding: 40px;
+  overflow-y: auto;
+  box-shadow: inset 0 0 10px rgba(0,0,0,0.05);
+}
+
+.question-top {
+  margin-bottom: 120px; /* Leave space for fixed buttons */
+}
+
+.fixed-actions {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  display: flex;
+  gap: 10px;
+  z-index: 999;
+}
+
+
+.expanded-box {
+  display: block;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.question-title {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.question-text {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.option {
+  margin: 10px 0;
+  font-size: 17px;
+}
+
+.option input {
+  margin-right: 10px;
+  transform: scale(1.2);
+}
+
+/* Inputs */
+.integer-input {
+  font-size: 20px;
+  padding: 8px 12px;
+  width: 100px;
+  border: 2px solid #ced4da;
+  border-radius: 4px;
+  outline: none;
+}
+
+.integer-input:focus {
+  border-color: #007bff;
+}
+
+/* Navigation Buttons */
+.actions {
+  margin-top: 30px;
+  display: flex;
+  gap: 15px;
+}
+
+.actions button {
+  background-color: #1d3557;
+  color: white;
+  font-weight: bold;
+  border: none;
+  padding: 10px 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.actions button:hover {
+  background-color: #457b9d;
+}
+
+.review-btn {
+  background-color: #ffb703 !important;
+  color: black !important;
+}
+
+/* Score Display */
+.score-display {
+  font-size: 22px;
+  margin-top: 30px;
+  padding: 15px;
+  background-color: #dff0d8;
+  color: #2d572c;
+  border-radius: 5px;
+  font-weight: bold;
+  border: 2px solid #b6e1b3;
+}
+
+.custom-radio {
+  border: 1px solid #aaa;
+  border-radius: 6px;
+  padding: 10px;
+  margin: 5px 0;
+  cursor: pointer;
+  background-color: #f2f2f2;
+  transition: background 0.2s ease;
+}
+
+.custom-radio:hover {
+  background-color: #e0e0e0;
+}
+
+.custom-radio.selected {
+  background-color: #007bff;
+  color: white;
+  font-weight: bold;
+  border-color: #0056b3;
+}
+
+.custom-checkbox {
+  border: 1px solid #aaa;
+  border-radius: 6px;
+  padding: 10px;
+  margin: 5px 0;
+  cursor: pointer;
+  background-color: #f9f9f9;
+  transition: background 0.2s ease;
+}
+
+.custom-checkbox:hover {
+  background-color: #eee;
+}
+
+.custom-checkbox.selected {
+  background-color: #28a745;
+  color: white;
+  font-weight: bold;
+  border-color: #1e7e34;
+}
+
+.question-img {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 15px;
+  border: 2px solid #ddd;
+  border-radius: 6px;
+}
+
+.option-img {
+  max-height: 200px;
+  object-fit: contain;
+  display: block;
+}
+
+.question-image-wrapper {
+  margin-top: 12px;
+  text-align: center;
+}
+
+.question-img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+}
+
+/* Instructions & Info Page */
+.instructions-screen {
+  max-width: 600px;
+  margin: 60px auto;
+  padding: 30px 40px;
+  background-color: #ffffff;
+  border-radius: 16px;
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.1);
+  font-family: 'Segoe UI', sans-serif;
+  color: #333;
+  text-align: left;
+}
+
+.instructions-screen h2 {
+  font-size: 28px;
+  margin-bottom: 20px;
+  color: #222;
+  font-weight: 600;
+}
+
+.instructions-screen ul {
+  padding-left: 20px;
+  margin-bottom: 25px;
+}
+
+.instructions-screen li {
+  margin-bottom: 10px;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+/* Input Form for Name and ID */
+.info-form {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.info-form input {
+  padding: 12px 16px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  outline: none;
+  transition: border-color 0.2s;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.info-form input:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.15);
+}
+
+/* Buttons */
+.start-btn {
+  padding: 12px 20px;
+  font-size: 18px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+  margin-top: 10px;
+  align-self: center;
+}
+
+.start-btn:hover {
+  background-color: #0056b3;
+}
+
+.pdf-buttons {
+  margin: 20px 0;
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.pdf-buttons button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 16px;
+  border-radius: 6px;
+  font-size: 15px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.pdf-buttons button:hover {
+  background-color: #0056b3;
+}
+
+.pdf-buttons button:active {
+  transform: scale(0.97);
+}
+
