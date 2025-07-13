@@ -7,17 +7,16 @@ const questions = [{
   id: 123456789,
   type: "mcq",
   question: "Identify the correct graph for y = x²",
-  image: "/images/triangle-question.png",
+  image: process.env.PUBLIC_URL + "/images/triangle-question.png",
   options: [
-    { label: "Graph 1", img: "/images/graph1.png" },
-    { label: "Graph 2", img: "/images/graph2.png" },
-    { label: "Graph 3", img: "/images/graph3.png" },
-    { label: "Graph 4", img: "/images/graph4.png" }
+    { label: "Graph 1", img: process.env.PUBLIC_URL + "/images/graph1.png" },
+    { label: "Graph 2", img: process.env.PUBLIC_URL + "/images/graph2.png" },
+    { label: "Graph 3", img: process.env.PUBLIC_URL + "/images/graph3.png" },
+    { label: "Graph 4", img: process.env.PUBLIC_URL + "/images/graph4.png" }
   ],
   correct: 0,
   marking: { correct: 3, wrong: -1, unattempted: 0 }
-}
-]
+}]
 
 function formatTime(seconds) {
   const m = Math.floor(seconds / 60);
